@@ -1,14 +1,9 @@
 # Philosophers
 
-**Philosophers** (represented by parts of a program) sit around a table, with a big plate of spaghetti at its center. They each have a fork, but they need two forks to eat ; so they need to borrow their neighbor's fork to eat.
-
-# Rules
-- Each philosopher should be a thread.
-- One fork between each philosopher, therefore if they are multiple philosophers, there will be a fork at the right and the left of each philosopher.
-- To avoid philosophers duplicating forks, I should protect the forks state with a mutex for each of them.
+Philosophers is a project of the mandatory part of the cursus. It's only made in C and the main goal was to understand how threads works in language C and use them to solve a logical problem. The simulation will stop if all philosophers have eaten enough or if one philosopher die.
 
 # Execute
-- The Two Programs Take The Following Arguments:
+- The programs reauires the following arguments:
   - **number_of_philosophers**: is the number of philosophers and also the number of forks.
   - **time_to_die**: is in milliseconds, if a philosopher doesn’t start eating **’time_to_die’** milliseconds after starting their last meal or the beginning of the simulation, it dies.
   - **time_to_eat**: is in milliseconds and is the time it takes for a philosopher to eat. During that time they will need to keep the two forks.
