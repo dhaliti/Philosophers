@@ -1,13 +1,21 @@
 # Philosophers
 
-The aim of this project is to introduce threads and mutex.
-The project consists in making X Philosophers live at the same time as a thread, each one has to eat, think and sleep.
+This project focuses on solving the dining philosophers problem - in computer science it is an example problem often used in concurrent algorithm design to illustrate synchronization issues and techniques for resolving them.
 
-Each action of a philosopher must be output like this: timestamp_in_ms X has taken a fork
 
-⚠️ 1 philo can only eat with 2 forks in hand, and the forks cannot be shared!
-
-Example : If you throw 1 philosopher, there will be only one fork, the philosopher will not be able to eat and he will die after the time indicated in argument 1
+* One or more philosophers are sitting at a round table either eating, either thinking, either sleeping. While they are eating, they do not think or sleep; while thinking they don’t eat or sleep; and, of course, while sleeping, they do not eat or think.
+* The philosophers sit at a circular table with a large bowl of spaghetti in the center.
+* There are some forks on the table. Serving and eating spaghetti with a single fork is very inconvenient, so the philosophers will eat with two forks, one for each hand.
+* Each time a philosopher finishes eating, they will drop their forks and start sleeping. Once they have finished sleeping, they will start thinking. The simulation stops when a philosopher dies.
+* Every philosopher needs to eat and they should never starve.
+* Philosophers don’t speak with each other.
+* Philosophers don’t know when another philosopher is about to die.
+* Philosophers avoid death.
+* Each philosopher is thread.
+* One fork between each philosopher, therefore if they are multiple philosophers, there will be a fork at the right and the left of each philosopher.
+* To avoid philosophers duplicating forks, there is forks state protection with a mutex for each of them.
+* Any change of status of a philosopher will be written as follows (with X replaced with the philosopher number and timestamp_in_ms the current timestamp in milliseconds):
+  * timestamp_in_ms X some_action
 
 
 
