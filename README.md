@@ -1,6 +1,15 @@
 # Philosophers
 
-Philosophers is a project of the mandatory part of the 42 cursus. It's only made in C and the main goal was to understand how threads works in language C and use them to solve a logical problem. The simulation will stop if all philosophers have eaten enough or if one philosopher die.
+The aim of this project is to introduce threads and mutex.
+The project consists in making X Philosophers live at the same time as a thread, each one has to eat, think and sleep.
+
+Each action of a philosopher must be output like this: timestamp_in_ms X has taken a fork
+
+⚠️ 1 philo can only eat with 2 forks in hand, and the forks cannot be shared!
+
+Example : If you throw 1 philosopher, there will be only one fork, the philosopher will not be able to eat and he will die after the time indicated in argument 1
+
+
 
 # Execute
 - The programs reauires the following arguments:
