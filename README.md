@@ -28,7 +28,7 @@ This project focuses on solving the dining philosophers problem - in computer sc
   - **number_of_times_each_philosopher_must_eat**: argument is optional, if all philosophers eat at least ’number_of_times_each_philosopher_must_eat’ the
 simulation will stop. If not specified, the simulation will stop only at the death of a philosopher.
 
-**Example**: Without **number_of_times_each_philosopher_must_eat** Argument `./philo 4 500 200 200`</br>
+**Example**: Without **number_of_times_each_philosopher_must_eat** Argument `./philo 5 500 200 200`</br>
 **Example**: With **number_of_times_each_philosopher_must_eat** Argument `./philo 7 310 100 100 7`
 
 <img width="736" alt="Screen Shot 2022-05-21 at 4 04 49 PM" src="https://user-images.githubusercontent.com/105823790/169655331-c9215260-1096-4af9-ba3d-0705566e3aa9.png">
